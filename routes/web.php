@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\TodosController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,12 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
-Route::get('/todolist', function () {
-    return view('todolist');
-})->middleware(['auth'])->name('todolist');
+Route::prefix('todolist')->group(function () {
+    Route::get('/', [TodosController::class, 'index'])->name('todolist');
+    Route::post('/', [TodosController::class, 'store'])->name('todolist.create');
+    Route::put('/{todo_id}', [TodosController::class, 'update'])->name('todolist.update');
+    Route::delete('/{todo_id}', [TodosController::class, 'destroy'])->name('todolist.delete');
+});
 
 require __DIR__ . '/auth.php';

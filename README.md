@@ -2,6 +2,7 @@
 Laravel project sample
 
 ## Requirement
+
 * PHP >= 8.1
 * node >= 16.1.0 (for `npm`)
 * postgres >= 12
@@ -11,9 +12,14 @@ or use
 - docker
 - docker compose
 
+## test account
+
+`admin@test.com`/`password`
+
 ## Installation
 
 ### local (required php, node, postgresSql)
+
 ```
 composer install
 npm install

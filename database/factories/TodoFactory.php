@@ -1,0 +1,23 @@
+<?php
+
+namespace Database\Factories;
+
+use App\Models\Todo;
+use Illuminate\Database\Eloquent\Factories\Factory;
+
+class TodoFactory extends Factory
+{
+    protected $model = Todo::class;
+
+    public function definition(): array
+    {
+        return [
+            'title'       => $this->faker->sentence,
+            'description' => $this->faker->paragraph,
+            'completed'   => $this->faker->boolean,
+            'user_id'     => $this->faker->numberBetween(1, 10),
+            'created_at'  => $this->faker->dateTime,
+            'updated_at'  => $this->faker->dateTime,
+        ];
+    }
+}

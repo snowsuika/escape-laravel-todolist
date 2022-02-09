@@ -1,20 +1,20 @@
 {
-    "_readme": [
-        "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
-        "This file is @generated automatically"
-    ],
-    "content-hash": "65e85f9f959c0b087110331754d451cf",
-    "packages": [
-        {
-            "name": "asm89/stack-cors",
-            "version": "v2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/asm89/stack-cors.git",
-                "reference": "73e5b88775c64ccc0b84fb60836b30dc9d92ac4a"
-            },
-            "dist": {
+  "_readme": [
+    "This file locks the dependencies of your project to a known state",
+    "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+    "This file is @generated automatically"
+  ],
+  "content-hash": "385a1c57691510c05f62f4cd9b697a3c",
+  "packages": [
+    {
+      "name": "asm89/stack-cors",
+      "version": "v2.1.1",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/asm89/stack-cors.git",
+        "reference": "73e5b88775c64ccc0b84fb60836b30dc9d92ac4a"
+      },
+      "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/asm89/stack-cors/zipball/73e5b88775c64ccc0b84fb60836b30dc9d92ac4a",
                 "reference": "73e5b88775c64ccc0b84fb60836b30dc9d92ac4a",
@@ -5447,26 +5447,83 @@
                 "BSD-3-Clause"
             ],
             "description": "This is the PHP port of Hamcrest Matchers",
-            "keywords": [
-                "test"
-            ],
-            "support": {
-                "issues": "https://github.com/hamcrest/hamcrest-php/issues",
-                "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
-            },
-            "time": "2020-07-09T08:09:16+00:00"
+          "keywords": [
+            "test"
+          ],
+          "support": {
+            "issues": "https://github.com/hamcrest/hamcrest-php/issues",
+            "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
+          },
+          "time": "2020-07-09T08:09:16+00:00"
         },
-        {
-            "name": "laravel/sail",
-            "version": "v1.13.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/laravel/sail.git",
-                "reference": "ede5e861549be2c3a8b789cdb34203a5aef5b92a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sail/zipball/ede5e861549be2c3a8b789cdb34203a5aef5b92a",
+      {
+        "name": "laravel/breeze",
+        "version": "v1.8.0",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/laravel/breeze.git",
+          "reference": "9680289ab0a9dd7708622dd4626326b07aaeb524"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/laravel/breeze/zipball/9680289ab0a9dd7708622dd4626326b07aaeb524",
+          "reference": "9680289ab0a9dd7708622dd4626326b07aaeb524",
+          "shasum": ""
+        },
+        "require": {
+          "illuminate/filesystem": "^8.42|^9.0",
+          "illuminate/support": "^8.42|^9.0",
+          "illuminate/validation": "^8.42|^9.0",
+          "php": "^7.3|^8.0"
+        },
+        "type": "library",
+        "extra": {
+          "branch-alias": {
+            "dev-master": "1.x-dev"
+          },
+          "laravel": {
+            "providers": [
+              "Laravel\\Breeze\\BreezeServiceProvider"
+            ]
+          }
+        },
+        "autoload": {
+          "psr-4": {
+            "Laravel\\Breeze\\": "src/"
+          }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+          "MIT"
+        ],
+        "authors": [
+          {
+            "name": "Taylor Otwell",
+            "email": "taylor@laravel.com"
+          }
+        ],
+        "description": "Minimal Laravel authentication scaffolding with Blade and Tailwind.",
+        "keywords": [
+          "auth",
+          "laravel"
+        ],
+        "support": {
+          "issues": "https://github.com/laravel/breeze/issues",
+          "source": "https://github.com/laravel/breeze"
+        },
+        "time": "2022-02-09T00:14:35+00:00"
+      },
+      {
+        "name": "laravel/sail",
+        "version": "v1.13.2",
+        "source": {
+          "type": "git",
+          "url": "https://github.com/laravel/sail.git",
+          "reference": "ede5e861549be2c3a8b789cdb34203a5aef5b92a"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/laravel/sail/zipball/ede5e861549be2c3a8b789cdb34203a5aef5b92a",
                 "reference": "ede5e861549be2c3a8b789cdb34203a5aef5b92a",
                 "shasum": ""
             },

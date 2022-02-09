@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -22,6 +23,15 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
+
+        $user = User::create([
+                                 'name'     => 'admin',
+                                 'email'    => 'admin@test.com',
+                                 'password' => Hash::make('password'),
+                             ]);
+        $user->forceFill([
+                             'email_verified_at' => now(),
+                         ])->save();
     }
 
     /**

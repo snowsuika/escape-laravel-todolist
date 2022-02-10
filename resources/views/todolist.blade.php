@@ -44,8 +44,8 @@
                         </tbody>
                     </table>
                 </div>
-
             </div>
+            {{ $todos->links() }}
         </div>
     </div>
 

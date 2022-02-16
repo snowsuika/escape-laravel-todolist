@@ -12,6 +12,9 @@ or use
 - docker
 - docker compose
 
+## test route
+http://localhost:9090
+
 ## test account
 
 `admin@test.com`/`password`
@@ -35,7 +38,7 @@ php artisan serve
 docker-compose up -d --build
 docker-compose exec app sh -c "composer install"
 docker-compose exec app sh -c "php artisan migrate"
-docker-compose exec app sh -c 'php artisan db:seed --class="RolesAndPermissionsSeeder"'
+docker-compose exec app sh -c 'php artisan db:seed'
 docker-compose exec app sh -c 'php artisan storage:link'
 docker-compose exec node sh -c "npm install && npm run dev"
 ```
